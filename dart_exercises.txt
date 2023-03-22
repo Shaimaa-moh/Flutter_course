@@ -1,0 +1,243 @@
+//exercise 2
+void main() {
+ 
+  int ? number =int.parse("5");
+  if (number % 2 ==0 )
+  {
+    print("the number you entered is even");
+  }
+  else {
+    print("the number you entered is odd");
+  }
+  }
+  ----------------------------------------------
+  //exercise 3 
+  void main() {
+ 
+  var no_list =[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+  for (int i=0;i<no_list.length;i++)
+  {
+      if(no_list[i]<5)
+      {
+        print(no_list[i]);
+      }
+  
+  }
+}
+------------------------------------
+exercise 4
+void main() {
+ 
+  var list= [];
+  int ? x =int.parse("26");
+  int  divisor = x;
+  while(divisor > 0){
+  if ((x % divisor)==0){
+    
+   list.add(divisor);
+      }
+    divisor --;
+  }
+  print(list);
+}
+---------------------------------------
+exercise 5
+void main() {
+  var common_list=[];
+ 
+  var a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+
+  var  b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+    for (int i=0 ;i <a.length ; i++)
+    {
+      for (int j=0 ; j<b.length ;j++)
+      {
+        if ( a[i]==b[j])
+        {
+          common_list.add(a[i]);
+        }
+      }
+    }
+  final uniqueNumbers = common_list.toSet().toList();
+  print(uniqueNumbers);
+}
+----------------------------------
+Exercise 6
+void main() {
+  String word = 'racecar';
+
+  String reversed = word.split('').reversed.join('');
+
+    if(reversed == word) {
+  print('The string is a palindrome.');
+    } 
+  else {
+  print('The string is not a palindrome.');
+}
+}
+---------------------------------------
+Exercise 7
+void main() {
+  var new_even=[];
+  var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+  for (int i=0;i<a.length ;i++)
+  {
+    if ((a[i]%2)==0)
+    {
+      new_even.add(a[i]);
+    }
+  }
+  print(new_even);
+}
+---------------------------------------------
+Exercise 8
+import "dart:math";
+void main() {
+  String  ? p1 ="paper";
+  String  ? p2 ="rock";
+     if (p1 == "rock"){
+        if (p2 == "rock"){
+            print("The game is a draw");
+          }
+        else if (p2 == "paper"){
+            print("Player 2 wins!");
+        }
+        else if(p2 == "scissors"){
+            print("Player 1 wins!");
+        }
+         
+     }
+           else if(p1 == "paper"){
+        if (p2 == "rock"){
+            print("Player 1 wins!");
+          }
+      
+        else if (p2 == "paper"){
+            print("The game is a draw");
+        }
+        else if (p2 == "scissors"){
+            print("Player 2 wins!");
+          }
+           }
+    else if (p1 == "scissors"){
+        if (p2 == "rock"){
+          print("Player 2 wins!");
+        }
+    
+        else if (p2 == "paper"){
+            print("Player 1 wins!");
+        }
+        else if (p2 == "scissors"){
+            print("The game is a draw");
+        }
+    }
+    else{
+        print("Invalid input, try again");
+    }
+ }
+ --------------------------------------
+ Exercise 9 
+import "dart:math";
+void main() {
+int ?guess =int.parse("50");
+var range = Random();
+  
+   print('Guess a number between 1 and 100');
+   
+    if (guess == range.nextInt(100)){
+        print("You won!!!");
+    }
+  
+    else if (guess < range.nextInt(100)) {
+      print('Try Higher');
+      }
+    else if (guess > range.nextInt(100) ){
+   print('Try Lower');
+  }
+}
+-----------------------------------------------
+ Exercise 10
+import "dart:math";
+void main() {
+  
+  if (isPrime(10)) {
+    print('it is a prime number');
+  } else {
+    print('it is not a prime number');
+  }
+ }
+
+
+bool isPrime(int N) {
+  for (var i = 2; i <= N / i; ++i) {
+    if (N % i == 0) {
+      return false;
+    }
+  }
+  return true;
+}
+----------------------------------------
+Exercise 11
+import "dart:math";
+void main() {
+var new_list=[];
+var a = [5, 10, 15, 20, 25];
+new_list.add(a.first);
+new_list.add(a.last);
+print(new_list);
+}
+---------------------------------------
+Exercise 12
+import "dart:math";
+var fib=[];
+void main ()
+{
+  int ? x=int.parse("4");
+  int i=1;
+  if(x==0)
+  {
+    fib=[];
+  }
+  else if (x==1) {
+    fib=[1];
+  }
+  else if (x==2) {
+    fib=[1,1];
+  }
+  else if (x>2) {
+    fib=[1,1];
+    while (i< x-1)
+      
+    {
+      fib.add(fib[i]+fib[i-1]);
+      i+=1;
+    }
+    print(fib);
+  }
+}
+-----------------------------------------------
+Exercise 13
+import "dart:math";
+
+
+void main() {
+ var numbers=[1,1,1,1,23,4,5,6,8];
+ final uniqueNumbers = numbers.toSet().toList();
+ print(uniqueNumbers);
+}
+-------------------------------------------------
+Exercise 14
+import "dart:math";
+
+
+void main() {
+ 
+print (reverse_word("My name is Michele"));
+}
+
+String reverse_word (String x)
+{
+  
+ String reversed = x.split(' ').reversed.join(' ');
+ return (reversed);
+}
