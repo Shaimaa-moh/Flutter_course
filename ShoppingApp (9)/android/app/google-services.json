@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1001558795267",
+    "project_id": "loginauth-71c1f",
+    "storage_bucket": "loginauth-71c1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001558795267:android:33e515096a4800a679da36",
+        "android_client_info": {
+          "package_name": "com.example.shoppingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001558795267-kq01kakucvnnqfi15b9ni6om0e72tvho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkeyEkJBqB--U8L2cPXAhgUreQ0NKalu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001558795267-kq01kakucvnnqfi15b9ni6om0e72tvho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
